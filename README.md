@@ -7,17 +7,18 @@ Este proyecto consiste en una clase de Python llamada NILM (Neural Network Image
 Para utilizar la clase NILM, sigue estos pasos:
 
 1. **Instalación:** Para la instalación de esta librería utiliza el comando `pip`:
+
    `pip install nilm-usb`
 
-2. **Importa la clase NILM:** En tu script de Python, importa la clase NILM desde el archivo que contiene su definición.
+3. **Importa la clase NILM:** En tu script de Python, importa la clase NILM desde el archivo que contiene su definición.
 
    `from nilm_usb.NILM import NILM`
 
-3. **Inicializa la clase NILM:** Carga el modelo de red neuronal convolucional pre-entrenado proporcionando la ruta al archivo del modelo como argumento.
+4. **Inicializa la clase NILM:** Carga el modelo de red neuronal convolucional pre-entrenado proporcionando la ruta al archivo del modelo como argumento.
 
     `classifier = NILM("ruta/al/modelo.h5")`
 
-4. **Realiza predicciones:** Utiliza el método predict() para realizar predicciones sobre imágenes. Este método toma la ruta de la imagen como argumento y devuelve la clase predicha y la probabilidad asociada.
+5. **Realiza predicciones:** Utiliza el método predict() para realizar predicciones sobre imágenes. Este método toma la ruta de la imagen como argumento y devuelve la clase predicha y la probabilidad asociada.
 
     `clase_predicha, probabilidad = classifier.predict("ruta/a/la/imagen.jpg")`
     `print("Clase predicha:", clase_predicha)`
